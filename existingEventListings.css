@@ -1,0 +1,96 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li, label {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default text color and font family */
+body {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Event Header */
+.event-header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Event Listings */
+.event-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+    position: relative; /* Add this line */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.event h2 {
+    margin-bottom: 10px;
+}
+
+.event:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+}
+
+/* Delete and Edit Buttons */
+.delete-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ff6961;
+    display: none;
+}
+
+.event:hover .delete-button {
+    display: block;
+}
+
+.edit-button {
+    position: absolute;
+    top: calc(100% + 100px); /* Adjust the distance as needed */
+    right: 10;
+    cursor: pointer;
+    font-size: 18px;
+    color: #3498db;
+    display: none;
+}
+
+.event:hover .edit-button {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.edit-button {
+    top: 30px;
+    color: #0000ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+}

@@ -1,0 +1,48 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default text color and font family */
+body {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Admin Panel */
+.admin-panel {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Admin Header */
+.admin-header {
+    margin-bottom: 20px;
+}
+
+/* Admin Options */
+.admin-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.admin-options a {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.admin-options a:hover {
+    background-color: #2ecc71;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply styling to other elements as needed */
